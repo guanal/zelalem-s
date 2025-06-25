@@ -16,23 +16,23 @@ const certificates = [
     date: "2022-2024",
     description:
       "Active participation in university discipline committee, contributing to student welfare and campus governance.",
-    image: "/zel.jpg",
+    image: "/zel1.jpg",
     skills: ["Leadership", "Decision Making", "Conflict Resolution", "Team Collaboration"],
     type: "Leadership",
     verified: true,
   },
   {
-    id: 2,
-    title: "English Language Improvement Center (ELIC)",
-    issuer: "Bahir Dar University",
-    date: "2022-2024",
-    description:
-      "Completed advanced English language improvement program, enhancing communication skills and academic writing.",
-    image: "/zel.jpg",
-    skills: ["Communication", "Academic Writing", "Presentation Skills", "Language Proficiency"],
-    type: "Academic",
-    verified: true,
-  },
+  id: 2,
+  title: "Peace Education Training",
+  issuer: "Bahir Dar University, British Council, European Union",
+  date: "March 13–17, 2024",
+  description:
+    "Successfully completed a five-day training on Peace Education. The program covered modules on understanding and analyzing conflict, managing conflict, youth in peacebuilding, and peace in action.",
+  image: "/zel2.jpg", // Replace with actual image path or URL
+  skills: ["Conflict Analysis", "Peacebuilding", "Youth Engagement", "Conflict Management"],
+  type: "Training",
+  verified: true,
+}
 ]
 
 const typeColors = {
