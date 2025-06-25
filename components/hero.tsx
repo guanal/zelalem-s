@@ -7,7 +7,7 @@ import Image from "next/image"
 
 export function Hero() {
   const scrollToAbout = () => {
-    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+    document.getElementById('about')?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
@@ -93,18 +93,31 @@ export function Hero() {
               </Button>
 
               <div className="flex space-x-3">
-                <Button variant="outline" size="lg" className="p-3">
+                <a
+                  href="https://github.com/zelalem-ka"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center p-3 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                >
                   <Github className="w-5 h-5" />
                   <span className="sr-only">GitHub</span>
-                </Button>
-                <Button variant="outline" size="lg" className="p-3">
+                </a>
+                <a
+                  href="https://linkedin.com/in/zelalem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center p-3 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                >
                   <Linkedin className="w-5 h-5" />
                   <span className="sr-only">LinkedIn</span>
-                </Button>
-                <Button variant="outline" size="lg" className="p-3">
+                </a>
+                <a
+                  href="mailto:zelalem@example.com"
+                  className="inline-flex items-center justify-center p-3 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                >
                   <Mail className="w-5 h-5" />
                   <span className="sr-only">Email</span>
-                </Button>
+                </a>
               </div>
             </motion.div>
           </motion.div>
@@ -117,18 +130,6 @@ export function Hero() {
             className="relative"
           >
             <div className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96">
-              {/* Animated rings */}
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                className="absolute inset-0 rounded-full border-2 border-dashed border-blue-300 dark:border-blue-600"
-              />
-              <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 15, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                className="absolute inset-4 rounded-full border-2 border-dashed border-purple-300 dark:border-purple-600"
-              />
-
               {/* Profile image container */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -145,23 +146,6 @@ export function Hero() {
                     priority
                   />
                 </div>
-              </motion.div>
-
-              {/* Floating elements */}
-              <motion.div
-                animate={{ y: [-10, 10, -10] }}
-                transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY }}
-                className="absolute -top-4 -right-4 bg-white dark:bg-gray-800 rounded-full p-3 shadow-lg"
-              >
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [10, -10, 10] }}
-                transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
-                className="absolute -bottom-4 -left-4 bg-white dark:bg-gray-800 rounded-full p-4 shadow-lg"
-              >
-                <span className="text-2xl">🚀</span>
               </motion.div>
             </div>
           </motion.div>
